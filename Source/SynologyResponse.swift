@@ -314,6 +314,7 @@ public extension SynologyClient {
             case mountPointType = "mount_point_type"
             case volumeStatus = "volume_status"
             case type
+            case md5
         }
         
         /// Real path of a shared folder in a volume space.
@@ -334,6 +335,7 @@ public extension SynologyClient {
         /// Volume status including free space, total space and read-only status.
         public let volumeStatus: VolumeStatus?
         public let type: String?
+        public let md5: String?
     }
 
     struct VolumeStatus: Codable {

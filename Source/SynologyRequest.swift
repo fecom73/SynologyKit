@@ -154,7 +154,8 @@ public extension SynologyClient {
         public static let mountPointType = AdditionalOptions(rawValue: 1 << 5)
         public static let volumeStatus = AdditionalOptions(rawValue: 1 << 6)
         public static let type = AdditionalOptions(rawValue: 1 << 7)
-        public static let `default`: AdditionalOptions = [.size, .time, .type]
+        public static let md5 = AdditionalOptions(rawValue: 1 << 8)
+        public static let `default`: AdditionalOptions = [.size, .time, .type, .md5]
         
         func value() -> String {
             
